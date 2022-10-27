@@ -32,6 +32,9 @@ createApp ({
                 ],
             };
         },
+    created() {
+        this.startAutoplay();
+    },
 
     methods: {
         showNext() {
@@ -51,8 +54,16 @@ createApp ({
         showItem(itemIndex) {
             this.activeGame = itemIndex;
         },
+        stopAutoplay() {
+            clearInterval(this.autoplay);
+            this.autoplay = null;
+        },
+        startAutoplay() {
+            if (this.autoplay === null) {
+                this.autoplay = setInterval(() => {
+                this.showNext();
+                }, 3000);
+            }
+        },
     },
-
-
-
 }).mount('#app');

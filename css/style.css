@@ -4,17 +4,22 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #15173e;
+}
+
 .container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .item {
     float: left;
-    width: 700px;
-    height: 300px;
+    width: 800px;
+    height: 350px;
     position: relative;
 }
 
@@ -34,13 +39,13 @@
 
 .thumbs {
     float: left;
-    height: 300px;
+    height: 350px;
     background: #000;
     position: relative;
 }
 
 .thumb {
-    height: calc((300px) / 5);
+    height: calc((350px) / 5);
     opacity: 0.5;
 }
 
