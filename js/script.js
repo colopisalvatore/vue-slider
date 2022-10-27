@@ -2,7 +2,7 @@ console.log('Vue ok', Vue);
 
 const { createApp } = Vue;
 
-createApp({
+createApp ({
     data() {
         return {
             activeGame: 0,

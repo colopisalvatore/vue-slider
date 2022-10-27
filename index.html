@@ -38,10 +38,10 @@
             <div class="slider-wrapper" tabindex="0">
 
                 <div class="item">
-                    <img :src="slides.image[activeGame]" :alt="slides.title[activeGame]" />
+                    <img :src="slides[activeGame].image" :alt="slides[activeGame].title" />
                     <div class="text">
-                        <h3>{{slides.title[activeGame]}}</h3>
-                        <p>{{slides.text[activeGame]}}</p>
+                        <h3>{{slides[activeGame].title}}</h3>
+                        <p>{{slides[activeGame].text}}</p>
                     </div>
                 </div>
 
